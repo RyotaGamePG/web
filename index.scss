@@ -1,0 +1,51 @@
+.box{
+  width: 100px;
+  height:100px;
+  background-color: yellow;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+  
+}
+.box:hover
+{
+  background-color: blue;
+  width: 300px;
+}
+
+.text{
+  //幅
+  width: 200px;
+  //width: auto;
+  //display: 
+  //display: inline-block;
+  //フォントサイズ
+  font-size: 20px;
+  //フォント幅
+  font-weight: bold;
+  //テキスト水平スペース
+  letter-spacing: .1lem;
+  //色
+  color:black;
+  //ホワイトスペースの種類 - nowrap 折り返しなし
+  white-space: nowrap;
+  //ブロック外のテキスト種類 - hidden 描画なし
+  overflow: hidden;
+  //要素の右をどうするか　- solid 線
+  border-right: 1px solid
+  rgba(66, 69, 240, 0.5);
+  mix-blend-mode: screen;
+  //アニメーション
+  animation: typing 1.5s, steps(10),
+    blink .5s steps(1)infinite
+    alternate;
+}
+
+@keyframes typing{
+  0%{
+    width: 0;
+  }
+}
+@keyframes blink{
+  // transparent  - 透明
+  50%{border-right-color: transparent;}
+}

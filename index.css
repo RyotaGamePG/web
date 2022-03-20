@@ -1,0 +1,53 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.box:hover {
+  background-color: blue;
+  width: 300px;
+}
+
+.text {
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: .1lem;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid rgba(66, 69, 240, 0.5);
+  mix-blend-mode: screen;
+  -webkit-animation: typing 1.5s, steps(10), blink 0.5s steps(1) infinite alternate;
+          animation: typing 1.5s, steps(10), blink 0.5s steps(1) infinite alternate;
+}
+
+@-webkit-keyframes typing {
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-right-color: transparent;
+  }
+}
+/*# sourceMappingURL=index.css.map */
